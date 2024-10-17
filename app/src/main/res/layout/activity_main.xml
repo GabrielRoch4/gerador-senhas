@@ -169,7 +169,36 @@
         />
 
     <TextView
-        
+        android:id="@+id/generatedPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:background="#E0E0E0"
+        app:layout_constraintTop_toBottomOf="@id/generatePasswordButton"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <Button
+        android:id="@+id/copyPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_copyPasswordButton"
+        app:layout_constraintTop_toBottomOf="@id/generatedPassword"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="#03DAC5"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

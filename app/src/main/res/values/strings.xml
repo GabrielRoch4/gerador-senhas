@@ -8,4 +8,5 @@
     <string name="app_useSpecialCharacters">Use Special Characters</string>
     <string name="app_useEmoji">Use Emoji</string>
     <string name="app_generatePasswordButton">Generate</string>
+    <string name="app_copyPasswordButton">Copy</string>
 </resources>
