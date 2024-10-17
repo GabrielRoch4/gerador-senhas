@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/main"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/passwordLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_passwordLength"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toTopOf="@id/title"
+        android:layout_marginTop="70dp"
+        />
+
+    <SeekBar
+        android:id="@+id/editPasswordLength"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="0"
+        app:layout_constraintTop_toTopOf="@id/passwordLength"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/useLetters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/app_useLetters"
+        app:layout_constraintStart_toStartOf="@id/passwordLength"
+        app:layout_constraintTop_toTopOf="@id/editPasswordLength"
+        android:layout_marginTop="60dp"
+        />
+
+    <Switch
+        android:id="@+id/editUseLetters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/editPasswordLength"
+        app:layout_constraintBottom_toBottomOf="@id/useLetters"
+        app:layout_constraintTop_toTopOf="@id/useLetters"
+        />
+
+    <TextView
+        android:id="@+id/useNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/app_useNumbers"
+        app:layout_constraintStart_toStartOf="@id/useLetters"
+        app:layout_constraintTop_toTopOf="@id/useLetters"
+        android:layout_marginTop="60dp"
+        />
+
+    <Switch
+        android:id="@+id/editUseNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/editPasswordLength"
+        app:layout_constraintBottom_toBottomOf="@id/useNumbers"
+        app:layout_constraintTop_toTopOf="@id/useNumbers"
+        />
+
+    <TextView
+        android:id="@+id/useCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/app_useCapital"
+        app:layout_constraintStart_toStartOf="@id/useNumbers"
+        app:layout_constraintTop_toTopOf="@id/useNumbers"
+        android:layout_marginTop="60dp"
+        />
+
+    <Switch
+        android:id="@+id/editUseCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/editPasswordLength"
+        app:layout_constraintBottom_toBottomOf="@id/useCapital"
+        app:layout_constraintTop_toTopOf="@id/useCapital"
+        />
+
+    <TextView
+        android:id="@+id/useSpecialCharacters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/app_useSpecialCharacters"
+        app:layout_constraintStart_toStartOf="@id/useCapital"
+        app:layout_constraintTop_toTopOf="@id/useCapital"
+        android:layout_marginTop="60dp"
+        />
+
+    <Switch
+        android:id="@+id/editUseSpecialCharac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/editPasswordLength"
+        app:layout_constraintBottom_toBottomOf="@id/useSpecialCharacters"
+        app:layout_constraintTop_toTopOf="@id/useSpecialCharacters"
+        />
+
+    <TextView
+        android:id="@+id/useEmoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/app_useEmoji"
+        app:layout_constraintStart_toStartOf="@id/useSpecialCharacters"
+        app:layout_constraintTop_toTopOf="@id/useSpecialCharacters"
+        android:layout_marginTop="60dp"
+        />
+
+    <Switch
+        android:id="@+id/editUseEmoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/editPasswordLength"
+        app:layout_constraintBottom_toBottomOf="@id/useEmoji"
+        app:layout_constraintTop_toTopOf="@id/useEmoji"
+        />
+
+    <Button
+        android:id="@+id/generatePasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_generatePasswordButton"
+        app:layout_constraintTop_toTopOf="@id/useEmoji"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="#6200EE"
+        />
+
+    <TextView
+        
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

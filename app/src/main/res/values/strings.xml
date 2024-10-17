@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PasswordGenerator</string>
+    <string name="app_title">Password Generator</string>
+    <string name="app_passwordLength">Password Length</string>
+    <string name="app_useLetters">Use Letters</string>
+    <string name="app_useNumbers">Use Numbers</string>
+    <string name="app_useCapital">Use Capital</string>
+    <string name="app_useSpecialCharacters">Use Special Characters</string>
+    <string name="app_useEmoji">Use Emoji</string>
+    <string name="app_generatePasswordButton">Generate</string>
+</resources>
